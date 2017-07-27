@@ -1,0 +1,1 @@
+python -m pipeline --project sandbox-orfeon --temp_location gs://sandbox-orfeon/dataflow/staging --topic_trend projects/sandbox-orfeon/topics/trend --topic_heatmap projects/sandbox-orfeon/topics/heatmap --topic_console projects/sandbox-orfeon/topics/console --topic_receipt projects/sandbox-orfeon/topics/receipt --streaming --runner DataflowRunner

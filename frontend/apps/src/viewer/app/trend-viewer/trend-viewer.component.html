@@ -1,0 +1,8 @@
+<ng-container *ngIf="trend$ | async as trend; else loading">
+  <div class="trend-items" fxLayout="row" fxLayoutGap="8px" fxLayoutWrap="wrap">
+    <div *ngFor="let data of trend; trackBy: trackByFn; index as index" nxtTrendItem [item]="data" [rank]="index + 1"></div>
+  </div>
+</ng-container>
+<ng-template #loading>
+  <span>Now Loading...</span>
+</ng-template>

@@ -1,0 +1,10 @@
+[
+  {"name": "sales_date", "type": "timestamp", "mode": "nullable"},
+  {"name": "store_code", "type": "string", "mode": "nullable"},
+  {"name": "register_id", "type": "string", "mode": "nullable"},
+  {"name": "receipt_number", "type": "integer", "mode": "nullable"},
+  {"name": "receipt_branch_number", "type": "integer", "mode": "nullable"},
+  {"name": "product_code", "type": "string", "mode": "nullable"},
+  {"name": "quantity", "type": "integer", "mode": "nullable"},
+  {"name": "price", "type": "integer", "mode": "nullable"}
+]

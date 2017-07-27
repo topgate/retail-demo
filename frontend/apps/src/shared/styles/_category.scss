@@ -1,0 +1,39 @@
+@function categoryColor($category) {
+  @if $category=='001' {
+    @return green;
+  }
+  @if $category=='002' {
+    @return blue;
+  }
+  @if $category=='003' {
+    @return orange;
+  }
+  @if $category=='004' {
+    @return lightseagreen;
+  }
+  @if $category=='005' {
+    @return yellow;
+  }
+  @if $category=='006' {
+    @return red;
+  }
+  @if $category=='007' {
+    @return lightgreen;
+  }
+  @return grey;
+}
+
+@each $category in '001',
+'002',
+'003',
+'004',
+'005',
+'006',
+'007' {
+  .category--#{$category} {
+    border-color: categoryColor($category);
+    .ribbon {
+      background-color: categoryColor($category);
+    }
+  }
+}

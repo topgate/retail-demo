@@ -1,0 +1,17 @@
+<md-toolbar class="app-toolbar mat-elevation-z2">
+  <span>Webstore App</span>
+  <span class="flex-fill"></span>
+  <button md-icon-button [mdMenuTriggerFor]="appMenu">
+   <md-icon>more_vert</md-icon>
+  </button>
+</md-toolbar>
+
+<div class="store-container">
+  <div class="store-item-list">
+    <nxt-store-item *ngFor="let product of products$ | async" [product]="product" (purchased)="onPurchased(product)"></nxt-store-item>
+  </div>
+</div>
+
+<md-menu #appMenu="mdMenu" yPosition="above">
+  <button md-menu-item> About </button>
+</md-menu>

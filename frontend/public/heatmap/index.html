@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <base href="/heatmap/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heatmaps</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/3.9.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/3.9.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/3.9.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/3.9.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/3.9.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+</head>
+
+<body>
+    <div id="app-container">
+        <header class="app-toolbar">
+            <div class="app-toolbar__row">
+                <span>Store Heat Map</span>
+                <span class="flex-fill"></span>
+                <img id="screen-toggle" src="images/fullscreen.svg" class="app-toolbar__icon icon-button" onclick="toggleFullscreen();">
+            </div>
+        </header>
+        <div id="map"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyYlbZev-rg6L5oXaZlvDDTjUXdpRO620&libraries=visualization&callback=initMap"></script>
+</body>
+
+</html>

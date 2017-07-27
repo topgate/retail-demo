@@ -1,0 +1,38 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-toolbar {
+  background-color: #fff;
+  color: #767676;
+  z-index: 2;
+  .icon {
+    margin-right: 0.5rem;
+  }
+}
+
+.store-container {
+  flex: 1 1 auto;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  .store-item-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    nxt-store-item {
+      box-sizing: border-box;
+      flex: 1 1 auto;
+      max-width: 200px;
+      max-height: 400px;
+      margin: 0;
+    }
+  }
+}

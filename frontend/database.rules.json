@@ -1,0 +1,16 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": "auth != null",
+    "stream": {
+      "$version": {
+        ".indexOn": ["salesDate"]
+      }
+    },
+    "trend": {
+      "$version": {
+        ".indexOn": ["priceSum", "quantitySum"]
+      }
+    }
+  }
+}

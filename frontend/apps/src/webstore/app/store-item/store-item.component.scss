@@ -1,0 +1,70 @@
+:host {
+  display: block;
+  padding: 4px;
+}
+
+md-card {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  md-card-content {
+    height: 100%;
+    color: #333;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+  }
+  .image {
+    width: 200px;
+    max-height: 240px;
+  }
+  .content {
+    padding: 8px;
+    width: 100%;
+    .product {
+      justify-content: center;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+      .name {
+        font-weight: bold;
+        text-overflow: ellipsis;
+      }
+      .price {
+        color: #777;
+      }
+    }
+    .purchase-button {
+      border: solid 1px #333;
+      color: #333;
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+/*
+ * カテゴリ別カラーリボン
+ */
+
+@import "../../../shared/styles/category";
+$ribbon-size: 10px;
+md-card {
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  overflow: hidden;
+}
+
+.ribbon {
+  width: $ribbon-size * 2;
+  height: $ribbon-size * 2;
+  overflow: hidden;
+  position: absolute;
+  top: -$ribbon-size;
+  left: -$ribbon-size;
+  transform: rotate(-45deg);
+  background-color: grey;
+}

@@ -1,0 +1,8 @@
+<div class="data-line" fxLayout="row" fxLayoutGap="1em">
+  <span class="data-label">store:{{data.storeCode}}-{{data.storeName}}</span>
+  <span class="data-label">product:{{data.productCode}}-{{data.productName}}</span>
+  <span class="data-label">quantity:{{data.quantity}}</span>
+  <span class="data-label">price:{{data.price | currency:'JPY':true}}</span>
+  <span fxFlex="1 1 auto"></span>
+  <span class="data-label">[{{data.salesDate | date:'HH:mm:ss'}}]</span>
+</div>

@@ -1,0 +1,28 @@
+$background-color: #1d2c4d;
+$stream-text-color: #eee;
+$stream-text-color-special: #5fbf2f;
+:host {
+  border: solid 1px $background-color;
+  border-radius: 2px;
+  background-color: $background-color;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.stream-container {
+  height: 100%;
+  overflow-y: scroll;
+  font-family: Courier New, Courier, monospace;
+  .stream-line {
+    display: block;
+    color: $stream-text-color;
+    font-size: 0.9em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    &.special {
+      color: $stream-text-color-special;
+    }
+  }
+}

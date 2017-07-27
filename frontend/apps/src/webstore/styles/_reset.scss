@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+
+html, body {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+
+    font-family: $mat-font-family;
+    color: #474747;
+}

@@ -1,0 +1,36 @@
+@import '~@angular/material/theming';
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.viewer-container {
+  height: 100%;
+  background-color: #eee;
+  padding: 16px;
+  [nxtStreamViewer] {
+    height: 30vh;
+  }
+}
+
+.app-toolbar {
+  background-color: #fff;
+  color: #767676;
+  z-index: 2;
+  .icon {
+    margin-right: 0.5rem;
+  }
+}
+
+$viewer-header-height: 32px;
+.viewer-header {
+  margin-bottom: 16px;
+  height: $viewer-header-height;
+  .viewer-title {
+    line-height: $viewer-header-height;
+    height: $viewer-header-height;
+    color: #4A5960;
+    font-size: $viewer-header-height;
+  }
+}

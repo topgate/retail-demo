@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "retail-dataflow-demo",
+    "staging": "retail-dataflow-demo",
+    "prod": "retail-dataflow-demo"
+  }
+}

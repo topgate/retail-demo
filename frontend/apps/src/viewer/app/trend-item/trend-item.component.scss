@@ -1,0 +1,64 @@
+:host {
+  display: inline-flex;
+  margin-bottom: 8px;
+  transition: width ease 1s;
+}
+
+md-card {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4) !important;
+  color: #474747;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.body {
+  font-size: 1.0rem;
+}
+
+.trend-rank-1 {
+  .body {
+    font-size: 1.5rem;
+  }
+}
+
+.trend-rank-2 {
+  .body {
+    font-size: 1.3rem;
+  }
+}
+
+.trend-rank-3 {
+  .body {
+    font-size: 1.2rem;
+  }
+}
+
+/*
+ * カテゴリ別カラーリボン
+ */
+
+@import "../../../shared/styles/category";
+
+$ribbon-size: 20px;
+
+md-card {
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  overflow: hidden;
+}
+
+.ribbon {
+  width: $ribbon-size * 2;
+  height: $ribbon-size * 2;
+  overflow: hidden;
+  position: absolute;
+  top: -$ribbon-size;
+  left: -$ribbon-size;
+  transform: rotate(-45deg);
+  background-color: grey;
+}

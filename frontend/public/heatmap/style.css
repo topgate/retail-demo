@@ -1,0 +1,85 @@
+/* Reset */
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+.icon-button {
+    background: transparent;
+    border-width: 0;
+    cursor: pointer;
+}
+
+/* App */
+
+#app-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-toolbar {
+    height: 64px;
+    background-color: #fff;
+    color: #767676;
+    font-size: 20px;
+    z-index: 2;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.app-toolbar__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 64px;
+    line-height: 64px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.app-toolbar__icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    width: 24px;
+    margin-right: 0.5rem;
+}
+
+/* Map */
+
+#map {
+    height: calc(100vh - 64px);
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#floating-panel {
+    background-color: #fff;
+    border: 1px solid #999;
+    left: 25%;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    z-index: 5;
+}

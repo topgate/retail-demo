@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+:host {
+  display: flex;
+  color: white;
+  line-height: 20px;
+  font: {
+    size: $mat-body-font-size-base;
+    family: $mat-font-family;
+  }
+}

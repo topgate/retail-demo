@@ -1,0 +1,21 @@
+<md-toolbar class="app-toolbar mat-elevation-z2">
+  <span>Webstore Viewer</span>
+  <span fxFlex="1 1 auto"></span>
+  <button md-icon-button (click)="toggleFullscreen()">
+   <md-icon *ngIf="!isFullscreen">fullscreen</md-icon>
+   <md-icon *ngIf="isFullscreen">fullscreen_exit</md-icon>
+  </button>
+</md-toolbar>
+
+<div class="viewer-container" fxFlex="1 1 auto" fxLayout="column" fxLayoutGap="16px">
+
+  <div class="viewer-header">
+    <span class="viewer-title">Transaction Data Streaming Visualization</span>
+  </div>
+  <div nxtStreamViewer></div>
+  <div class="viewer-header">
+    <span class="viewer-title">Hot Product Trends</span>
+  </div>
+  <div nxtTrendViewer fxFlex="1 1 auto"></div>
+
+</div>

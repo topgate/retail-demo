@@ -1,0 +1,19 @@
+<md-card class="trend-item-card" [ngClass]="cardClass" fxLayout="column">
+  <div class="ribbon"></div>
+  <div class="header" fxLayout="row">
+    <span class="product-name">{{ item.productName }}</span>
+  </div>
+  <span fxFlex="1 1 auto"></span>
+  <div class="body">
+    <div class="quantity" fxLayout="row">
+      <span class="label">Quantity:</span>
+      <span fxFlex="1 1 auto"></span>
+      <span class="value">{{ item.quantitySum | number }}</span>
+    </div>
+    <div class="price" fxLayout="row">
+      <span class="label">Price:</span>
+      <span fxFlex="1 1 auto"></span>
+      <span class="value">{{ item.priceSum | currency:'JPY':true }}</span>
+    </div>
+  </div>
+</md-card>

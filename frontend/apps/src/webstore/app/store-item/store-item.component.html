@@ -1,0 +1,16 @@
+<md-card class="category--{{product.category.id}}">
+  <div class="ribbon">
+    <span class="ribbon-inner"></span>
+  </div>
+  <md-card-content fxLayout="column">
+    <img *ngIf="product.imageURL" class="image" [src]="product.imageURL" [alt]="product.productName">
+    <span fxFlex="1 1 auto"></span>
+    <div class="content" fxLayout="column">
+      <div class="product" fxLayout="column">
+        <span class="name">{{ product.productName }}</span>
+        <span class="price">{{ product.price | currency:'JPY':true }}</span>
+      </div>
+      <button class="purchase-button" md-button (click)="purchase()">BUY NOW</button>
+    </div>
+  </md-card-content>
+</md-card>

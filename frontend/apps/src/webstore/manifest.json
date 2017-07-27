@@ -1,0 +1,6 @@
+{
+  "name": "Next Retail Demo | Webstore",
+  "short_name": "Webstore",
+  "start_url": "/webstore/",
+  "display": "standalone"
+}

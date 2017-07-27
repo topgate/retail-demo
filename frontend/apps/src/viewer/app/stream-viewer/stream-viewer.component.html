@@ -1,0 +1,8 @@
+<div class="stream-container">
+  <ng-container *ngIf="stream.length > 0; else: loading">
+    <div class="stream-line" *ngFor="let data of stream; trackBy: trackByFn" nxtStreamItem [data]="data"></div>
+  </ng-container>
+  <ng-template #loading>
+    <span class="stream-line">Waiting new data...</span>
+  </ng-template>
+</div>
