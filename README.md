@@ -1,26 +1,27 @@
 # next-retail-demo
 
-## Environment
+Google Cloud Dataflowを利用して作成された架空の店舗の購入履歴をリアルタイムにビジュアライゼーションするデモアプリケーションです。
 
-### GCP Develop Project
+## Demo Screenshot
 
-* retail-dataflow-demo
+![Store Viewer](https://user-images.githubusercontent.com/446022/29105327-705bf008-7d07-11e7-9707-f9ae031b1d2b.png "Store Viewer")
 
-* [WebStore Demo](https://retail-dataflow-demo.firebaseapp.com/webstore/)
-* [Stream Viewer Demo](https://retail-dataflow-demo.firebaseapp.com/viewer/)
+![Store Heatmap](https://user-images.githubusercontent.com/446022/29105329-73ccc3c0-7d07-11e7-9273-9e9ad9c9340e.png "Store Heatmap")
 
-## Components
+## Demo動画
 
-### /appengine
+* [Store Viewer](https://youtu.be/6Dp2Wfary6Q)
+* [Store Heatmap](https://youtu.be/rTSozA2q73c)
 
-#### default module
+## 利用プロダクト
 
-WebStore API
+* App Engine
+* Compute Engine
+* Cloud Dataflow
+* Cloud Pub/Sub
+* Cloud Function
+* Firebase Realtime DB
 
-### /dataflow
+![Architecture](https://user-images.githubusercontent.com/446022/29105352-a01b2de0-7d07-11e7-957f-53048c6d3891.png "Architecture")
 
-Stream Processing
-
-### /frontend
-
-Viewer
+![Cloud Dataflow Console](https://user-images.githubusercontent.com/446022/29105349-9dcef256-7d07-11e7-9c08-690115244ff2.png "Cloud Dataflow Console")
